@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FaLinkedin, FaTelegram, FaWhatsapp } from 'react-icons/fa'
 export default function Mobile() {
     const [showMenu,SetShowMenu]=useState(false);
-    const Icon=!showMenu?X:MenuIcon
+    const Icon=showMenu?X:MenuIcon
   return (
     <header 
     className='flex md:hidden justify-between relative pt-3 border-b border-white pb-10'>
@@ -25,7 +25,7 @@ export default function Mobile() {
         </div>
         <div className={`absolute top-16 bg-gray-600 
             transition duration-500 rounded-xl transform p-4 left-0 w-full shadow-lg 
-            ${showMenu ? '-translate-y-[200%]' : '-translate-y-[0%]'}`}>
+            ${!showMenu ? '-translate-y-[200%]' : '-translate-y-[0%]'}`}>
             <nav className='flex gap-3 flex-col'>
             <a href='/#Home' className='cursor-pointer'>Home</a>
             <a href='/#Benefits' className='cursor-pointer'>Benefits</a>

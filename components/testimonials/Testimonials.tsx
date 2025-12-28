@@ -19,7 +19,7 @@ export default function TestimonialsSlider() {
 
   return (
     <>
-  <div className="relative w-full min-h-[250vh]">
+  <div className="relative w-full min-h-[180vh]">
     <div 
     className="sticky top-0 h-screen w-full z-0">
       <div className="bg-amber-500/20 z-10 absolute inset-0 
@@ -37,7 +37,7 @@ export default function TestimonialsSlider() {
       />
     </div>
     <div id="Reviews" 
-    className="absolute z-20 top-0 left-0 right-0 min-h-[80vh]
+    className="absolute z-20 top-0 left-0 right-0 min-h-[60vh]
     bg-gray-100">
       <div className=" overflow-hidden mt-20 w-full max-w-7xl text-center relative">
       <div

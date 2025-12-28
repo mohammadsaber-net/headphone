@@ -3,7 +3,7 @@ export default function Addvertise() {
     <div className='bg-[rgb(227,203,170)] text-white py-28 px-8 mx-auto
     flex gap-10 flex-col md:flex-row items-center
     '>
-      <img src="../../public/add.avif" alt="" />
+      <img src="/add.avif" alt="" />
       <div>
         <h2 className='text-xl sm:text-2xl md:text-4xl'>
         Music Like You've

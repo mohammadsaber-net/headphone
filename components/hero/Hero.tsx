@@ -6,7 +6,7 @@ export default function Hero() {
     className='h-screen relative'>
         <img
         className='absolute -z-10 w-full h-full top-0'
-        src="../../public/backgroundHero.avif" alt="" />
+        src="/backgroundHero.avif" alt="" />
       <div className='w-[90%] m-auto'>
         <div className='text-white'>
           <Header />

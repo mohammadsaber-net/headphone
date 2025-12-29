@@ -1,17 +1,22 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import Subscribe from ".././connection/Email.tsx"
-const testimonials = [
-  { name: "Mohamed Saber", title: "Review", text: "Amazing product! High quality and great experience." },
+import { useTranslation } from "react-i18next";
+  const testimonialsEn = [
+  { name: "Mohammad Saber", title: "Review", text: "Amazing product! High quality and great experience." },
   { name: "Ahmed Ali", title: "Review", text: "The sound quality is unbelievable. Highly recommended!" },
   { name: "Sara Mostafa", title: "Review", text: "Battery life is insane. I use it all day without charging." },
 ];
-
+  const testimonialsAr = [
+  { name: "محمد صابر", title: "تقييم", text: "منتج رائع! جودة صوت عالية وتجربة استخدام ممتازة." },
+  { name: "أحمد علي", title: "تقييم", text: "جودة الصوت مذهلة، صوت نقي وBass قوي. أنصح به بشدة!" },
+  { name: "سارة مصطفى", title: "تقييم", text: "عمر البطارية ممتاز، أستخدمه طوال اليوم دون الحاجة لإعادة الشحن." },
+];
 export default function TestimonialsSlider() {
   const [index, setIndex] = useState(0);
-
-  const next = () => setIndex((prev) => (prev + 1) % testimonials.length);
-  const prev = () => setIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+  const {t,i18n}=useTranslation()
+  const next = () => setIndex((prev) => (prev + 1) % testimonialsAr.length);
+  const prev = () => setIndex((prev) => (prev === 0 ? testimonialsAr.length - 1 : prev - 1));
   useEffect(() => {
     const interval = setInterval(next, 3000);
     return () => clearInterval(interval);
@@ -19,7 +24,9 @@ export default function TestimonialsSlider() {
 
   return (
     <>
-  <div className="relative w-full min-h-[180vh]">
+  <div
+  dir="ltr"
+  className="relative w-full min-h-[180vh]">
     <div 
     className="sticky top-0 h-screen w-full z-0">
       <div className="bg-amber-500/20 z-10 absolute inset-0 
@@ -27,7 +34,7 @@ export default function TestimonialsSlider() {
         <h2 
         dir="rtl"
         className="text-2xl text-gray-800 font-bold md:text-4xl">
-          اوقف ضوضاء العالم بيدك !
+         {t("reviews.review")}
         </h2>
       </div>
       <img
@@ -44,7 +51,7 @@ export default function TestimonialsSlider() {
         className="flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
-        {testimonials.map((t, i) => (
+        {(i18n.language==="ar"?testimonialsAr:testimonialsEn).map((t, i) => (
          <div key={i} className="flex-shrink-0 w-full p-8 text-[#777]">
             <div className="border w-fit m-auto p-6 rounded-xl border-gray-500">
             <div className="text-xl mb-4">{t.title}</div>
@@ -55,7 +62,7 @@ export default function TestimonialsSlider() {
         ))}
       </div>
       <div className="flex justify-center text-2xl text-gray-700 gap-2 -top-4 relative">
-        {testimonials.map((_, i) => (
+        {(i18n.language==="ar"?testimonialsAr:testimonialsEn).map((_, i) => (
           <button
           key={i}
           className={`w-3 h-3 rounded-full ${index === i ? "text-gray-500" : "text-gray-800"}`}

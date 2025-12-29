@@ -1,11 +1,13 @@
 import { Headphones } from 'lucide-react'
 import { FaLinkedin, FaTelegram, FaWhatsapp } from 'react-icons/fa'
 import Mobile from './mobile.tsx'
+import { useTranslation } from 'react-i18next'
 export default function Header() {
+  const {t}=useTranslation()
   return (
     <>
     <Mobile />
-    <header 
+    <header
     className='hidden md:flex justify-between pt-3 border-b border-white pb-10 items-center'>
       <div 
       className='flex gap-10 items-center'>
@@ -15,16 +17,16 @@ export default function Header() {
             <Headphones /> Soundbeam
         </div>
         <nav className='flex gap-4'>
-            <a href='/#Home' className='cursor-pointer'>Home</a>
-            <a href='/#Benefits' className='cursor-pointer'>Benefits</a>
-            <a href='/#Reviews' className='cursor-pointer'>Reviews</a>
+            <a href='/#Home' className='cursor-pointer'>{t("header.head1")}</a>
+            <a href='/#Benefits' className='cursor-pointer'>{t("header.head2")}</a>
+            <a href='/#Reviews' className='cursor-pointer'>{t("header.head3")}</a>
         </nav>
       </div>
       <div>
         <div className='flex gap-6 items-center'>
             <button 
             className='cursor-pointer text-gray-900 bg-amber-600 rounded px-2 py-1'>
-                Order Now
+                {t("header.head4")}
             </button>
             <div className='flex gap-3 text-xl'>
               <a 

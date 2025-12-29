@@ -1,5 +1,7 @@
+import { useTranslation } from 'react-i18next'
 import Header from '../navbar/Header.tsx'
 export default function Hero() {
+  const {t}=useTranslation()
   return (
     <div 
     id='Home'
@@ -15,13 +17,12 @@ export default function Hero() {
           <div className='w-fit'>
             <p>Soundbeam ERD - 3083</p>
           <h1 className='text-3xl my-8 sm:text-5xl md:text-7xl lg:text-9xl'>
-            Reinventing <br />
-            Sound Experience
+            {t("hero.hero11")}<br/>{t("hero.hero12")}
           </h1>
           <button 
             className='cursor-pointer text-white border-1 border-white 
             rounded px-6 py-3 transition rounded hover:bg-white hover:text-gray-600'>
-                Order Now
+                {t("hero.hero2")}
             </button>
           </div>
         </div>

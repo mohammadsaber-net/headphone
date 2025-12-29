@@ -1,6 +1,8 @@
 import { BatteryCharging, Bluetooth, Headphones, Radio } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Features() {
+  const {t}=useTranslation()
   return (
     <div id="Benefits" className="relative h-[130vh] pt-10 md:pt-0 text-[#ddd] bg-black/70">
         <div className="absolute inset-0 bg-black/50 z-10"></div>
@@ -10,43 +12,35 @@ export default function Features() {
        <div className="flex relative h-screen flex-col md:flex-row justify-center z-20 gap-6 md:gap-4">
         <div className="w-fit self-center"> 
           <Radio />
-          <h2 className="text-xl my-2 md-text-2xl">High Quality
-            Sound
+          <h2 className="text-xl my-2 md-text-2xl">{t("features.feature1")}
           </h2>
           <p className="m-w-80">
-            I'm a paragraph. Click here to add your own text and edit me.<br />
-             Let your users get to know you.
+            {t("features.feature12")}
           </p>
         </div>
         <div className="w-fit self-end"> 
           <Bluetooth />
-          <h2 className="text-xl my-2 md-text-2xl">Easy Wireless
-            Listening
+          <h2 className="text-xl my-2 md-text-2xl">{t("features.feature2")}
           </h2>
           <p>
-            I'm a paragraph. Click here to add your own text and edit me.<br />
-             Let your users get to know you.
+            {t("features.feature22")}
           </p>
         </div>
         <div className="self-center"> 
           <BatteryCharging />
           <h2 className="text-xl my-2 md-text-2xl">
-            Longer
-            Battery Life
+            {t("features.feature3")}
           </h2>
           <p>
-            I'm a paragraph. Click here to add your own text and edit me.<br />
-             Let your users get to know you.
+            {t("features.feature32")}
           </p>
         </div>
         <div className="self-end"> 
           <Headphones />
-          <h2 className="text-xl my-2 md-text-2xl">High Quality
-            Sound
+          <h2 className="text-xl my-2 md-text-2xl">{t("features.feature4")}
           </h2>
           <p>
-            I'm a paragraph. Click here to add your own text and edit me.<br />
-             Let your users get to know you.
+            {t("features.feature42")}
           </p>
         </div>
        </div>

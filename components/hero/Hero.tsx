@@ -16,7 +16,7 @@ export default function Hero() {
         <div className='mt-28 flex justify-center md:justify-end text-white'>
           <div className='w-fit'>
             <p>Soundbeam ERD - 3083</p>
-          <h1 className='text-3xl my-8 sm:text-5xl md:text-7xl lg:text-9xl'>
+          <h1 className='text-2xl my-8 sm:text-3xl md:text-5xl lg:text-7xl'>
             {t("hero.hero11")}<br/>{t("hero.hero12")}
           </h1>
           <button 

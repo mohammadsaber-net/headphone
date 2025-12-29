@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next"
+import { Link } from "react-router-dom"
 
 export default function Addvertise() {
   const {t}=useTranslation()
@@ -13,11 +14,12 @@ export default function Addvertise() {
       <p className='my-8'>
         {t("addver.addver2")}
         </p>
-        <button 
+        <Link 
+        to={"/order"}
         className='cursor-pointer text-white border-1 border-white 
         rounded px-6 py-3 transition rounded hover:bg-white hover:text-gray-600'>
             {t("addver.addver3")}
-        </button>
+        </Link>
       </div>
       <img src="/add.avif" alt="" />
     </div>

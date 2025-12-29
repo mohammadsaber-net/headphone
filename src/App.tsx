@@ -3,6 +3,7 @@ import Home from "../components/home/Home.tsx"
 import FAQ from "../components/Policy&info/FAQ.tsx"
 import ShippingReturns from "../components/Policy&info/ShippingReturns.tsx"
 import StorePolicy from "../components/Policy&info/StorePolicy.tsx"
+import Order from "../components/order/Order.tsx"
 import {Route,Routes } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/shipping-returns" element={<ShippingReturns />} />
         <Route path="/store-policy" element={<StorePolicy />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/order" element={<Order />} />
       </Routes>
     </div>
   )

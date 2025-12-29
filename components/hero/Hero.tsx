@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import Header from '../navbar/Header.tsx'
+import { Link } from 'react-router-dom'
 export default function Hero() {
   const {t}=useTranslation()
   return (
@@ -19,11 +20,12 @@ export default function Hero() {
           <h1 className='text-2xl my-8 sm:text-3xl md:text-5xl lg:text-7xl'>
             {t("hero.hero11")}<br/>{t("hero.hero12")}
           </h1>
-          <button 
+          <Link 
+          to={"/order"}
             className='cursor-pointer text-white border-1 border-white 
             rounded px-6 py-3 transition rounded hover:bg-white hover:text-gray-600'>
                 {t("hero.hero2")}
-            </button>
+            </Link>
           </div>
         </div>
       </div>

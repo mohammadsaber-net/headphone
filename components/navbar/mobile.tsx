@@ -2,6 +2,7 @@ import { Headphones, MenuIcon, X } from 'lucide-react'
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaLinkedin, FaTelegram, FaWhatsapp } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 export default function Mobile() {
     const [showMenu,SetShowMenu]=useState(false);
     const Icon=showMenu?X:MenuIcon
@@ -15,10 +16,11 @@ export default function Mobile() {
             <Headphones /> Soundbeam
         </div>
         <div className='flex items-center gap-6'>
-        <button 
+        <Link 
+        to={"/order"}
         className='cursor-pointer text-gray-900 bg-amber-600 rounded px-2 py-1'>
-            Order Now
-        </button>
+            {t("header.head4")}
+        </Link>
         <div 
         onClick={()=>SetShowMenu(!showMenu)}
         className='cursor-pointer'>

@@ -2,6 +2,7 @@ import { Headphones } from 'lucide-react'
 import { FaLinkedin, FaTelegram, FaWhatsapp } from 'react-icons/fa'
 import Mobile from './mobile.tsx'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 export default function Header() {
   const {t}=useTranslation()
   return (
@@ -24,10 +25,11 @@ export default function Header() {
       </div>
       <div>
         <div className='flex gap-6 items-center'>
-            <button 
+            <Link 
+            to={"/order"}
             className='cursor-pointer text-gray-900 bg-amber-600 rounded px-2 py-1'>
                 {t("header.head4")}
-            </button>
+            </Link>
             <div className='flex gap-3 text-xl'>
               <a 
               href="https://t.me/@moh123ph" 

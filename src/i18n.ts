@@ -74,6 +74,22 @@ i18n
                     policy2: "We are committed to providing original products of high quality.",
                     policy3: "All orders are confirmed before shipping.",
                     policy4: "Customer data privacy is maintained and not shared with any third party."
+                },
+                buy:{
+                    buy1:"HeadPhone LB",
+                    buy2:"color:",
+                    buy3:"Buy Now",
+                    buy4:"PRODUCT INFO",
+                    buy5:`Headphones are devices used to listen to audio privately,
+                     whether for music, calls, or gaming.
+                     They come in various types, including wired and wireless, 
+                     as well as over-ear, on-ear, and in-ear styles to suit different 
+                     needs. Most headphones offer high sound quality and 
+                     noise-canceling features for a comfortable listening experience, 
+                     and some include a microphone for calls or gaming. It is 
+                     recommended to choose the right type and size for comfort, 
+                     keep the headphones clean, and avoid excessively high volumes 
+                     to protect your hearing.`,
                 }
 
             }
@@ -113,7 +129,7 @@ i18n
                 email: {
                     email1: "ابقَ على تواصل",
                     email2: "البريد الإلكتروني",
-                    email3: "اشترك في النشرة الإخبارية",
+                    email3: "اطلعني علي اخر المنتجات",
                     email4: "اشترك",
                 },
                 footer: {
@@ -148,6 +164,20 @@ i18n
                     policy2:" نحن نلتزم بتقديم منتجات أصلية بجودة عالية.",
                     policy3:" جميع الطلبات يتم تأكيدها قبل الشحن.",
                     policy4:" يتم الحفاظ على خصوصية بيانات العملاء وعدم مشاركتها مع أي طرف ثالث."
+                },
+                buy:{
+                    buy1:"ٍسماعة أذن LB",
+                    buy2:"اللون:",
+                    buy3:"اشتر الآن",
+                    buy4:"معلومات عن المنتج،",
+                    buy5:`الهيدفون هو جهاز يُستخدم للاستماع إلى الصوت بشكل شخصي،
+                     سواء للموسيقى أو المكالمات أو الألعاب. تتنوع أنواع الهيدفون
+                      بين السلكية واللاسلكية، كما توجد سماعات فوق الأذن، على الأذن، 
+                     وداخل الأذن لتناسب مختلف الاحتياجات. تتميز معظم السماعات بجودة
+                      صوت عالية وقدرات عزل الضوضاء لتوفير تجربة استماع مريحة،
+                      كما تأتي بعض الأنواع بميكروفون للمكالمات أو الألعاب. يُنصح
+                      باختيار النوع والحجم المناسب للراحة، والحفاظ على نظافة
+                      السماعات، وتجنب رفع الصوت بشكل مبالغ فيه لحماية السمع.`,
                 }
             }
         }

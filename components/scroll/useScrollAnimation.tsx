@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function useScrollAnimation() {
-    const ref=useRef(null)
+    const ref=useRef<HTMLDivElement | null>(null)
     const [show, setShow]=useState<boolean>(false)
     useEffect(()=>{
         const observer=new IntersectionObserver(

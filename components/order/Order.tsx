@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react"
+import {type ReactNode, useState } from "react"
 import Header from "../navbar/Header"
 import Footer from '../footer/Footer'
 import Subscribe from '../connection/Email'

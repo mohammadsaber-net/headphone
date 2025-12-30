@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react"
+import { type ReactNode, useState } from "react"
 import { useTranslation } from "react-i18next"
 
 type props={

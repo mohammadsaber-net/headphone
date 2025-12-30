@@ -90,6 +90,13 @@ i18n
                      recommended to choose the right type and size for comfort, 
                      keep the headphones clean, and avoid excessively high volumes 
                      to protect your hearing.`,
+                     buy6:"Email",
+                    buy7:"Name",
+                    buy8:"Phone Number",
+                    buy9:"Address",
+                    buy10:"Submit",
+                    buy11:"Order Confirmed",
+                    buy12:" Thank You !",
                 }
 
             }
@@ -169,6 +176,13 @@ i18n
                     buy1:"ٍسماعة أذن LB",
                     buy2:"اللون:",
                     buy3:"اشتر الآن",
+                    buy6:"الايميل",
+                    buy7:"الاسم",
+                    buy8:"رقم الهاتف",
+                    buy9:"العنوان",
+                    buy10:"ارسال",
+                    buy11:"تم تأكيد الطب بنجاح ",
+                    buy12:"شكرا لك",
                     buy4:"معلومات عن المنتج،",
                     buy5:`الهيدفون هو جهاز يُستخدم للاستماع إلى الصوت بشكل شخصي،
                      سواء للموسيقى أو المكالمات أو الألعاب. تتنوع أنواع الهيدفون

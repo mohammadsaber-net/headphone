@@ -5,8 +5,8 @@ export default function Hero() {
   const {t}=useTranslation()
   return (
     <div 
-    id='Home'
-    className='h-screen relative'>
+      id='Home'
+       className='md:h-[100vh] h-[70vh] relative'>
         <img
         className='absolute -z-10 w-full h-full top-0'
         src="/backgroundHero.avif" alt="" />
@@ -17,7 +17,7 @@ export default function Hero() {
         <div className='mt-28 flex justify-center md:justify-end text-white'>
           <div className='w-fit'>
             <p>Soundbeam ERD - 3083</p>
-          <h1 className='text-2xl my-8 sm:text-3xl md:text-5xl lg:text-7xl'>
+          <h1 className='text-3xl my-8 sm:text-4xl md:text-5xl lg:text-7xl'>
             {t("hero.hero11")}<br/>{t("hero.hero12")}
           </h1>
           <Link 

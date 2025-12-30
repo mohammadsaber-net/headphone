@@ -1,13 +1,23 @@
-import { useState } from "react"
+import { ReactNode, useState } from "react"
 import Header from "../navbar/Header"
 import Footer from '../footer/Footer'
 import Subscribe from '../connection/Email'
 import { useTranslation } from "react-i18next"
+import UserInfo from "./UserInfo"
 export default function Order() {
     const {t}=useTranslation()
     const images=["/JuiceGo_Image02.webp","/add.avif","/whitehead.avif","/blackhead.avif"]
     const [image,setImage]=useState<any>(images[0])
-    const [color,setColor]=useState<any>("")
+    const [color,setColor]=useState<any>(null)
+    const [show,setShow]=useState<boolean>(false)
+    const [error,setError]=useState<ReactNode>()
+    const handlePay=()=>{
+        if(!color){
+            setError("Please Choose Your Color")
+        }else{
+            setShow(true)
+        }
+    }
   return (
     <div className='text-white max-w-7xl bg-gray-700'>
         <div className="w-[90%] mx-auto ">
@@ -53,10 +63,13 @@ export default function Order() {
                 className="size-6 bg-amber-400 border border-white block cursor-pointer"></span>
             </div>
             <button 
+            onClick={handlePay}
             className="w-full hover:underline py-2 block rounded
             text-center bg-amber-700 mb-6 cursor-pointer">
                 {t("buy.buy3")}
             </button>
+            {show&&<UserInfo setError={setError}/>}
+            <p className={`mb-4 text-white text-center`}>{error}</p>
             <div className="pt-2 border-t border-gray-400">
                 <h4>{t("buy.buy4")}</h4>
                 <p >

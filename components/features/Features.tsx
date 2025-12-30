@@ -1,6 +1,6 @@
 import { BatteryCharging, Bluetooth, Headphones, Radio } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import useScrollAnimation from "../scroll/ScrollAnimation";
+import useScrollAnimation from "../scroll/useScrollAnimation.tsx";
 
 export default function Features() {
   const {t}=useTranslation()

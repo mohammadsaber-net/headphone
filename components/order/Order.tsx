@@ -3,7 +3,7 @@ import Header from "../navbar/Header"
 import Footer from '../footer/Footer'
 import Subscribe from '../connection/Email'
 import { useTranslation } from "react-i18next"
-import UserInfo from "./UserInfo"
+import UserInfo from "./UserInfo" 
 export default function Order() {
     const {t}=useTranslation()
     const images=["/JuiceGo_Image02.webp","/add.avif","/whitehead.avif","/blackhead.avif"]
